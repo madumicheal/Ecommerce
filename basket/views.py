@@ -11,6 +11,11 @@ def basket_summary(request):
     return render(request, 'store/basket/summary.html', {'basket': basket})
 
 
+def basket_retrieve(request):
+    products = Product.objects.all()
+    product_list = [{"name": obj.title} for obj in products]
+    return JsonResponse({"data": product_list})
+
 def basket_add(request):
     basket = Basket(request)
     if request.POST.get('action') == 'post':

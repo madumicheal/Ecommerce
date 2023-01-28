@@ -83,7 +83,7 @@ class Basket():
 
 
 """ 
-Code in this file has been inspried/reworked from other known works. Plese ensure that
+Code in this file has been inspired/reworked from other known works. Please ensure that
 the License below is included in any of your work that is directly copied from
 this source file.
 MIT License
